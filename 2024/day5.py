@@ -2,7 +2,6 @@ from day_base import Day
 
 
 class Day5(Day):
-    #3892
     def __init__(self):
         super().__init__(2024, 5, 'description', debug=False)
         
