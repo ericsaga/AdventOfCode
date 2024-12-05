@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "aoc24"
 version = "0.1.0"
-description = ""
+description = "Advent of Code 2024 solutions"
 authors = ["Eric Santiago <ericsantiago98@gmail.com>"]
 readme = "README.md"
 
