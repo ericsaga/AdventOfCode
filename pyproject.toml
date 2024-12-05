@@ -2,7 +2,7 @@
 name = "aoc24"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Eric Santiago <ericsantiago98@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
