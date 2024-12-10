@@ -30,7 +30,6 @@ def parse_path(current_x, current_y, map, paths, current_path):
     if current_value < 9:
         potential_paths = []
         for moving_function in moving_functions:
-            # CHECK ALL MOVS THAT WORK AND START A NEW PARSE_PATH FOR EACH OF THEM?
             new_x, new_y = moving_function(current_x, current_y)
             if (
                 coordinates_safe(new_x, new_y, len(map[0]), len(map))
