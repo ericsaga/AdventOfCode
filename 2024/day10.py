@@ -28,22 +28,19 @@ def parse_path(current_x, current_y, map, paths, current_path):
     current_value = map[current_y][current_x]
     needed_value = current_value + 1
     if current_value < 9:
-        potential_paths = []
         for moving_function in moving_functions:
             new_x, new_y = moving_function(current_x, current_y)
             if (
                 coordinates_safe(new_x, new_y, len(map[0]), len(map))
                 and map[new_y][new_x] == needed_value
             ):
-                potential_paths.append((new_x, new_y))
-        for potential_path in potential_paths:
-            parse_path(
-                potential_path[0],
-                potential_path[1],
-                map,
-                paths,
-                current_path + [potential_path],
-            )
+                parse_path(
+                    new_x,
+                    new_y,
+                    map,
+                    paths,
+                    current_path + [(new_x,new_y)],
+                )
     if current_value == 9:
         paths.append(current_path)
         return
