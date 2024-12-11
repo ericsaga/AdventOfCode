@@ -6,7 +6,7 @@ authors = ["Eric Santiago <ericsantiago98@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.11"
 bs4 = "^0.0.2"
 requests = "^2.32.3"
 tqdm = "^4.67.1"
