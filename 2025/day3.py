@@ -46,19 +46,3 @@ class Day3(Day):
 
 if __name__ == "__main__":
     (Day3()).run()
-
-# def random():
-#     digits = ["9", "8", "7", "6", "5", "4", "3", "2", "1"]
-#     joltages = []
-#     for bank in self.input:
-#         occurences = set(bank)
-#         max_j = ""
-#         for _ in range(2):
-#             for finding_digit in digits:
-#                 if finding_digit in occurences:
-#                     max_j_index = bank.index(finding_digit)
-#                     max_j += finding_digit
-#                     bank = bank[max_j_index+1:]
-#                     occurences = set(bank)
-#                     break
-#         joltages.append(int(max_j))
